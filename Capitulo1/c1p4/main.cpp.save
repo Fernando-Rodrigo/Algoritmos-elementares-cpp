@@ -1,0 +1,24 @@
+/** 
+ * Considerando a velocidade de um movel em m/s, como obter a velocidade equivalente em km/h?
+ * 
+ *
+ */     
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    float vms, vkm;
+    
+    cout<< "Digite a velocidade em m/s: ";
+    cin>>vms;
+    
+    vkm = vms * 3.6;
+    
+    
+    
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}

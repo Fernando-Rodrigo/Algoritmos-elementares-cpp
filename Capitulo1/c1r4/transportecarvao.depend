@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1598055002 source:c:\users\fernando\documents\programas de computador\java e c++\c e c++\transportecarvao\main.cpp
+	<iostream>
+	<cstdlib>
+

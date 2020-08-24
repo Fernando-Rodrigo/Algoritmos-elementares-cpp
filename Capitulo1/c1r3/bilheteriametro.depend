@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1598052832 source:c:\users\fernando\documents\programas de computador\java e c++\c e c++\bilheteriametro\main.cpp
+	<iostream>
+	<cstdlib>
+	<cmath>
+
