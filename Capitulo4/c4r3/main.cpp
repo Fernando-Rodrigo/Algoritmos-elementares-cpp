@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <math.h>
 
 using namespace std;
 
@@ -17,6 +18,7 @@ int fracdec(float nr, int &num, int &den)
         temp = modf(nr, &n);
     }
     num = n;
+    return 0;
 }
 
 int mdc(int a, int b)
@@ -38,6 +40,7 @@ int simplificar(int &num, int &den)
     md = mdc (num, den);
     num = num / md;
     den = den / md;
+    return 0;
 }
 
 int main()
