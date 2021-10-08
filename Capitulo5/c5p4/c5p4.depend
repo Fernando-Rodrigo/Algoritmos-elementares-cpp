@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1630279789 source:c:\users\fernando\documents\programas de computador\java e c++\c e c++\algoritmos elementares-c++\capitulo5\c5p4\main.cpp
+	<cstdlib>
+	<iostream>
+
