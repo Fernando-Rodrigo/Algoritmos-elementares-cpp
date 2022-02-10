@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    float v[5][1], soma = 0;
+    float v[50][1], soma;
     int qv, i;
 
     cout << "Entre a quantidade de vertices do poligono: ";
@@ -21,10 +21,11 @@ int main()
         cin >> v[i][1];
     }
 
-    for (i = 0; i < qv - 1; i++)
-        soma = soma + (v[i][0] + v[i+1][0]) * (v[i][1] - v[i+1][1]);
-    soma = soma + (v[qv - 1][0] + v[0][0]) * (v[qv - 1][1] - v[0][1]);
-    soma = soma / 2;
+    soma=0;
+    for (i=0; i<qv-1; i=i+1)
+        soma=soma+(v[i][0]+v[i+1][0])*(v[i][1]-v[i+1][1]);
+    soma=soma+(v[qv-1][0]+v[0][0])*(v[qv-1][1]-v[0][1]);
+    soma=soma/2;
 
     cout << "Area do poligono: " << soma << endl;
 
