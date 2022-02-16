@@ -7,8 +7,8 @@ tipo registro com os campos correspondentes às coordenadas de um vértice.*/
 using namespace std;
 
 typedef struct{
-    float x;
-    float y;
+    int x;
+    int y;
 } Ccoord;
 
 int main()
