@@ -11,7 +11,7 @@ int main()
     int q, i;
     float v[50], v1[50], a, b;
 
-    cout << "Quantos números deseja entrar? ";
+    cout << "Quantos numeros deseja entrar? ";
     cin >> q;
     for (i = 0; i < q; i++){
         cout << "Digite o " << i + 1 << " x: ";
@@ -19,26 +19,6 @@ int main()
         cout << "Digite o " << i + 1 << " y: ";
         cin >> v1[i];
     }
-
-    /*Interpolação linear:
-    Exemplo:
-    x: 1 2 3 4 5
-    y: 2 6 8 9 10
-
-    Formulas para interpolação:
-    6 = a*2 + b
-    8 = a*3 + b
-
-    -y0 = -a*x0 - b
-    y1 = a*x1 + b
-
-    y1 - y0 = a*(x1 -x0)
-
-    a = (y1 - yo)/(x1 - x0)
-
-    b = y - a*x
-
-    Baseado nisso se cria a interpolação linear, resolvendo o sistema com as duas formulas acima.*/
 
     a = (v1[1] - v1[0])/(v[1] - v[0]);
     b = v1[0] - a*v[0];
