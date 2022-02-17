@@ -1,0 +1,56 @@
+/*Tomando como base o enunciado do problema proposto 6 do capítulo 3,construir e utilizar uma função que faça a leitura dos dados
+de entrada e uma outra função que receba a série de valores e devolva as três maiores velocidades registradas.*/
+
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+void Cadastro(float velocidade[]);
+void Analise(float velocidade[], int qv);
+
+int main()
+{
+    float velocidade[50];
+
+    Cadastro(velocidade);
+
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
+
+void Cadastro(float velocidade[]){
+    int i, qv;
+
+    cout << "Digite "
+    i = 1;
+    qv = 0;
+
+    while ( i != 0){
+        cout << "Qual a velocidade anotada? ";
+        cin >> i;
+        velocidade[qv] = i;
+        qv++;
+    }
+
+    Analise(velocidade, qv);
+}
+
+void Analise(float velocidade[], int qv){
+    float temp;
+    int i, j;
+
+    for (i = 0; i < qv - 2; i++){
+        for (j = i + 1; j < qv - 1; j++){
+            if (velocidade[i] < velocidade[j]){
+                temp = velocidade[i];
+                velocidade[i] = velocidade[j];
+                velocidade[j] = temp;
+            }
+        }
+    }
+
+    for (i = 0; i < 3; i++){
+        cout << "A " << i + 1 << "maior velocidade e: " << velocidade[i] << endl;
+    }
+}
